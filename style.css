@@ -1,13 +1,22 @@
+@font-face {
+	font-family: 'Jura'; 
+	src: url(./fonts/Jura.ttf); 
+}
+
 html, body {
   margin: 0;
+  font-size: 10px;
 }
+
 .main {
   width: 500px;
   margin: 0 auto;
+  font-family: 'Jura'; 
 }
 
 .title {
   text-align: center;
+  font-size: 4rem;
 }
 
 .details {
@@ -19,7 +28,8 @@ html, body {
 .summary {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 15px;
+  font-size: 2rem;
 }
 
 .summary__icon {
