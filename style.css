@@ -1,3 +1,27 @@
+html, body {
+  margin: 0;
+}
+.main {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.details {
+  margin-bottom: 20px;
+  border: solid 1px #000000;
+  border-radius: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .summary__icon {
   display: none;
   width: 20px;
