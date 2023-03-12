@@ -83,3 +83,47 @@ input:checked + label .label__icon {
 .label:active .label__img{
   opacity: 0.4;
 }
+
+@media (max-width: 820px){
+  .title {
+    font-size: 3rem;
+  }
+
+  .label__img {
+    width: 61vw;
+  }
+
+  .label__text {
+    font-size: 1.6rem;
+  }
+
+  .label__icon{
+    width: 2rem;
+  }
+}
+
+@media (max-width: 650px){
+
+  .label__img {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .label__text {
+    font-size: 1.4rem;
+  }
+
+  .label__img {
+    width: 90vw;
+  }
+
+  .label__icon{
+    width: 1.6rem;
+  }
+}
