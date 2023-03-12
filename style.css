@@ -33,7 +33,7 @@ body {
 }
 
 .details:hover .label__img {
-  display: inline;
+  width: 100%;
 }
 
 .details:hover .label__icon{
@@ -45,7 +45,7 @@ body {
 }
 
 input:not(:checked) + label .label__img {
-  display: none;
+  width: 0%;
 }
 
 input:checked + label .label__text {
@@ -66,6 +66,16 @@ input:checked + label .label__icon {
   font-weight: 600;
   background-color: #ffdb1f;
   border-radius: 2rem;
+}
+
+.label__icon {
+  transition: transform 0.3s;
+}
+
+.label__img {
+  display: block;
+  margin: 0 auto;
+  transition: width 0.3s;
 }
 
 .label:hover {
