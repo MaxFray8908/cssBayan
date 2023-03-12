@@ -5,11 +5,14 @@
 
 html, body {
   margin: 0;
-  font-size: 10px;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
 }
 
 .main {
-  width: 500px;
   margin: 0 auto;
   font-family: 'Jura'; 
 }
@@ -24,9 +27,9 @@ html, body {
 }
 
 .details {
-  margin-bottom: 20px;
-  border: solid 1px #000000;
-  border-radius: 20px;
+  margin-bottom: 2rem;
+  border: solid 0.1rem #000000;
+  border-radius: 2rem;
 }
 
 .details:hover .label__img {
@@ -58,11 +61,11 @@ input:checked + label .label__icon {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   font-size: 2rem;
   font-weight: 600;
   background-color: #ffdb1f;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .label:hover {
