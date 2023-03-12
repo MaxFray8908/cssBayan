@@ -45,7 +45,7 @@ body {
 }
 
 input:not(:checked) + label .label__img {
-  width: 0%;
+  width: 0;
 }
 
 input:checked + label .label__text {
@@ -95,11 +95,13 @@ input:checked + label .label__icon {
 }
 
 @media (max-width: 820px){
+
   .title {
     font-size: 3rem;
   }
 
-  .label__img {
+  .label__img,
+  .details:hover .label__img {
     width: 61vw;
   }
 
@@ -114,7 +116,8 @@ input:checked + label .label__icon {
 
 @media (max-width: 650px){
 
-  .label__img {
+  .label__img,
+  .details:hover .label__img {
     width: 75vw;
   }
 }
@@ -129,7 +132,8 @@ input:checked + label .label__icon {
     font-size: 1.4rem;
   }
 
-  .label__img {
+  .label__img,
+  .details:hover .label__img {
     width: 90vw;
   }
 
