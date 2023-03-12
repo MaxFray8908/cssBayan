@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'Jura'; 
+	src: url(./fonts/Jura.ttf); 
+}
+
+html, body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+}
+
+.main {
+  margin: 0 auto;
+  font-family: 'Jura'; 
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.details {
+  margin-bottom: 2rem;
+  border: solid 0.1rem #000000;
+  border-radius: 2rem;
+}
+
+.input {
+  display: none;
+}
+
+input:not(:checked) + label .label__img {
+  width: 0;
+}
+
+input:checked + label .label__text {
+  background-color: transparent;
+}
+
+input:checked + label .label__icon {
+  transform: rotate(45deg);
+}
+
+.label__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #ffdb1f;
+  border-radius: 2rem;
+}
+
+.label__icon {
+  opacity: 0;
+  transition: transform 0.3s;
+}
+
+.label__img {
+  display: block;
+  margin: 0 auto;
+  transition: width 0.3s;
+}
+
+@media (max-width: 820px){
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .label__img {
+    width: 61vw;
+  }
+
+  .label__text {
+    font-size: 1.6rem;
+  }
+
+  .label__icon{
+    width: 2rem;
+  }
+}
+
+@media (max-width: 650px){
+
+  .label__img {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .label__text {
+    font-size: 1.4rem;
+  }
+
+  .label__img,
+  .details:hover .label__img {
+    width: 90vw;
+  }
+
+  .label__icon{
+    width: 1.6rem;
+  }
+}
+
+@media (hover: hover) {
+
+  .main:hover .label__text {
+    background-color: transparent;
+  }
+
+  .main:hover .label__icon {
+    opacity: 1;
+  }
+
+  .details:hover .label__img {
+    width: 100%;
+  }
+  
+  .details:hover .label__icon{
+    transform: rotate(45deg);
+  }
+
+  .label:hover {
+    cursor: url(./img/cursor-hover.png), pointer;
+  }
+
+  @media (max-width: 820px){
+
+    .details:hover .label__img {
+      width: 61vw;
+    }
+  }
+
+  @media (max-width: 650px){
+
+    .details:hover .label__img {
+      width: 75vw;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+
+    .details:hover .label__img {
+      width: 90vw;
+    }
+  }
+}
+
+.label:active {
+  cursor: url(./img/cursor-click.png), pointer;
+}
+
+.label:active .label__text{
+  background-color: #ffdb1f;
+}
+
+.label:active .label__img{
+  opacity: 0.4;
+}
