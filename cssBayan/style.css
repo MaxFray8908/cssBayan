@@ -57,6 +57,7 @@ input:checked + label .label__icon {
 }
 
 .label__icon {
+  opacity: 0;
   transition: transform 0.3s;
 }
 
@@ -64,18 +65,6 @@ input:checked + label .label__icon {
   display: block;
   margin: 0 auto;
   transition: width 0.3s;
-}
-
-.label:active {
-  cursor: url(./img/cursor-click.png), pointer;
-}
-
-.label:active .label__text{
-  background-color: #ffdb1f;
-}
-
-.label:active .label__img{
-  opacity: 0.4;
 }
 
 @media (max-width: 820px){
@@ -130,6 +119,10 @@ input:checked + label .label__icon {
     background-color: transparent;
   }
 
+  .main:hover .label__icon {
+    opacity: 1;
+  }
+
   .details:hover .label__img {
     width: 100%;
   }
@@ -162,4 +155,16 @@ input:checked + label .label__icon {
       width: 90vw;
     }
   }
+}
+
+.label:active {
+  cursor: url(./img/cursor-click.png), pointer;
+}
+
+.label:active .label__text{
+  background-color: #ffdb1f;
+}
+
+.label:active .label__img{
+  opacity: 0.4;
 }
